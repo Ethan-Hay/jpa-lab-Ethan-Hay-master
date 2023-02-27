@@ -11,7 +11,7 @@ import javax.persistence.Table;
 @Entity
 @Data
 @NoArgsConstructor
-@Table(name = "Recipe")
+@Table(name = "Recipe", schema = "recipe")
 public class Recipe {
     @Id
     @Column(name="recipe_id")

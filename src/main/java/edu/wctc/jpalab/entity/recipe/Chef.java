@@ -5,13 +5,15 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
 @Data
 @NoArgsConstructor
-@Table(name = "Chef")
+@Table(name = "Chef", schema = "recipe")
 public class Chef {
+    @Id
 @Column(name = "chef_id")
     private int id;
 @Column(name = "chef_firstname")
